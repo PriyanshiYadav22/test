@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+
+    <title>Leisure Activity</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header{
+            width:80%;
+            margin: auto;
+            text-align: center;
+        }
+        h1{
+            color: solid black;
+            font-size: 62px;
+            text-align: center;
+            padding:1% 6%;
+            
+        }
+        p{
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .row{
+            display: inline-flex;
+            justify-content: space-between;
+        }
+        .col{
+            
+            flex-basis: 32%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .col img{
+            width: 100%;
+            display: block;
+        }
+        .layer{
+            background: transparent;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            transition: 0.2s;
+        }
+        .layer:hover{
+            background: rgba(4,9,30,0.7);
+        }
+        .layer h3{
+            width: 100%;
+            font-weight: 500;
+            color: #fff;
+            font-size: 26px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .layer:hover h3{
+            bottom: 49%;
+            opacity: 1;
+        }
+        .btn1{
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .btn1:hover{
+            border:1px solid rgb(201, 22, 22);
+            background: rgb(201, 22, 22);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <h1>Leisure Activities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div class="row">
+            <div class="col">
+                <img src="/Images/singing.jpg" >
+                <div class="layer">
+                    <h3>Singing</h3>
+                </div>
+            </div>
+            <div class="col">
+                <img src="/Images/painting.jpg" >
+                <div class="layer">
+                    <h3>Painting</h3>
+                </div>
+            </div>
+            <div class="col">
+                <img src="/Images/watching.jpg" >
+                <div class="layer">
+                    <h3>Watching</h3>
+                </div>
+            </div>
+        </div>
+        <a href="contact.html" class="btn1">Next page</a>
+    </section>
+</body>
+</html>
